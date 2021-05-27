@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/musical-octo-waffle/static/css/main.f7ea3d38.chunk.css",
+    "main.js": "/musical-octo-waffle/static/js/main.ce4cfedb.chunk.js",
+    "main.js.map": "/musical-octo-waffle/static/js/main.ce4cfedb.chunk.js.map",
+    "runtime-main.js": "/musical-octo-waffle/static/js/runtime-main.71589d05.js",
+    "runtime-main.js.map": "/musical-octo-waffle/static/js/runtime-main.71589d05.js.map",
+    "static/js/2.e0f5e411.chunk.js": "/musical-octo-waffle/static/js/2.e0f5e411.chunk.js",
+    "static/js/2.e0f5e411.chunk.js.map": "/musical-octo-waffle/static/js/2.e0f5e411.chunk.js.map",
+    "index.html": "/musical-octo-waffle/index.html",
+    "static/css/main.f7ea3d38.chunk.css.map": "/musical-octo-waffle/static/css/main.f7ea3d38.chunk.css.map",
+    "static/js/2.e0f5e411.chunk.js.LICENSE.txt": "/musical-octo-waffle/static/js/2.e0f5e411.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71589d05.js",
+    "static/js/2.e0f5e411.chunk.js",
+    "static/css/main.f7ea3d38.chunk.css",
+    "static/js/main.ce4cfedb.chunk.js"
+  ]
+}
