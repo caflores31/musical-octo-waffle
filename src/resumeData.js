@@ -1,10 +1,10 @@
 let resumeData = {
     "imagebaseurl":"https://caflores31.github.io/",
-    "name": "Cherrie Anne",
+    "name": "Cherrie",
     "role": "Developer Student and ServiceNow Consultant",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "roleDescription": "I am passionate about making open-source more accessible and building community.",
     "socialLinks":[
         {
           "name":"linkedin",
