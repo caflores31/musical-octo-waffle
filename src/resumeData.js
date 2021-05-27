@@ -52,14 +52,14 @@ let resumeData = {
     "skills":[
     
       {
-        "skillname":"Reactjs"
+        "skillname":"HTML"
       }
     ],
     "portfolio":[
       {
         "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "description":"runbuddy",
+        "imgurl":"images/portfolio/runbuddy.jpg"
       },
       {
         "name":"project2",
