@@ -6,18 +6,17 @@
 ;
 (function ($) {
 
-  //FlexSlider: Object Instance
+  //Object instance
   $.flexslider = function(el, options) {
     var slider = $(el);
 
-    // making variables public
+    // public variables
     slider.vars = $.extend({}, $.flexslider.defaults, options);
 
     var namespace = slider.vars.namespace,
         msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture,
         touch = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch) && slider.vars.touch,
-        // depricating this idea, as devices are being released with both of these events
-        //eventType = (touch) ? "touchend" : "click",
+        // devices released with both events
         eventType = "click touchend MSPointerUp",
         watchedEvent = "",
         watchedEventClearTimer,
@@ -29,14 +28,14 @@
         methods = {},
         focused = true;
 
-    // Store a reference to the slider object
+    // reference to slider
     $.data(el, "flexslider", slider);
 
-    // Private slider methods
+    // slider method //
     methods = {
       init: function() {
         slider.animating = false;
-        // Get current slide and make sure it is a number
+        // ensure this is number //
         slider.currentSlide = parseInt( ( slider.vars.startAt ? slider.vars.startAt : 0) );
         if ( isNaN( slider.currentSlide ) ) slider.currentSlide = 0;
         slider.animatingTo = slider.currentSlide;
@@ -45,16 +44,16 @@
         slider.slides = $(slider.vars.selector, slider);
         slider.container = $(slider.containerSelector, slider);
         slider.count = slider.slides.length;
-        // SYNC:
+        // SYNCH //
         slider.syncExists = $(slider.vars.sync).length > 0;
-        // SLIDE:
+        // SLIDE VAR //
         if (slider.vars.animation === "slide") slider.vars.animation = "swing";
         slider.prop = (vertical) ? "top" : "marginLeft";
         slider.args = {};
-        // SLIDESHOW:
+        // slideshows //
         slider.manualPause = false;
         slider.stopped = false;
-        //PAUSE WHEN INVISIBLE
+        //pause //
         slider.started = false;
         slider.startTimeout = null;
         // TOUCH/USECSS:
@@ -70,12 +69,12 @@
           }
           return false;
         }());
-        // CONTROLSCONTAINER:
+        // slider controls container //
         if (slider.vars.controlsContainer !== "") slider.controlsContainer = $(slider.vars.controlsContainer).length > 0 && $(slider.vars.controlsContainer);
         // MANUAL:
         if (slider.vars.manualControls !== "") slider.manualControls = $(slider.vars.manualControls).length > 0 && $(slider.vars.manualControls);
 
-        // RANDOMIZE:
+        // randomizes //
         if (slider.vars.randomize) {
           slider.slides.sort(function() { return (Math.round(Math.random())-0.5); });
           slider.container.empty().append(slider.slides);
@@ -83,7 +82,7 @@
 
         slider.doMath();
 
-        // INIT
+        //  init set up //
         slider.setup("init");
 
         // CONTROLNAV:
@@ -127,8 +126,7 @@
               if (!slider.manualPause && !slider.manualPlay && !slider.stopped) slider.play();
             });
           }
-          // initialize animation
-          //If we're visible, or we don't use PageVisibility API
+      
           if(!slider.vars.pauseInvisible || !methods.pauseInvisible.isHidden()) {
             (slider.vars.initDelay > 0) ? slider.startTimeout = setTimeout(slider.play, slider.vars.initDelay) : slider.play();
           }
@@ -241,7 +239,7 @@
               }
             }
 
-            // setup flags to prevent event duplication
+            // prevent event duplication //
             if (watchedEvent === "") {
               watchedEvent = event.type;
             }
@@ -266,7 +264,7 @@
               }
             }
 
-            // setup flags to prevent event duplication
+          
             if (watchedEvent === "") {
               watchedEvent = event.type;
             }

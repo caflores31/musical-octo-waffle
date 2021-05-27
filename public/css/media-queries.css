@@ -238,7 +238,7 @@
    .bars { width: 100%; }
 
 
-   /* Call To Action Section
+   /* Call To Action //
    /* ----------------------------------------------------------------- */
    #call-to-action { text-align: center; }
    #call-to-action h1 {
@@ -252,13 +252,13 @@
    #call-to-action p { font-size: 15px; }
 
 
-   /* Portfolio Section
+   /* Portfolio Section //
    /* ----------------------------------------------------------------- */
    #portfolio-wrapper .columns { margin-bottom: 40px; }
    .popup-modal {	max-width: 85%; }
 
 
-   /* Testimonials Section
+   /* Testimonials Section //
    ----------------------------------------------------------------------- */
    #testimonials .text-container { text-align: center; }
    #testimonials h1 {
@@ -282,7 +282,7 @@
    }
 
 
-   /* contact Section
+   /* contact Section //
    ----------------------------------------------------------------------- */
    #contact { padding-bottom: 66px; }
    #contact .section-head { margin-bottom: 12px; }
@@ -371,12 +371,3 @@
    footer .social-links li { margin-left: 14px; }   
 
 }
-
-
-
-
-
-
-
-
-
