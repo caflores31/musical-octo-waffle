@@ -53,38 +53,32 @@ let resumeData = {
     
       {
         "skillname":"HTML"
+      },
+
+      {
+        "skillname":"ITIL Framework"
       }
     ],
     "portfolio":[
       {
-        "name":"project1",
+        "name":"Run Buddy",
         "description":"runbuddy",
-        "imgurl":"images/portfolio/phone.jpg"
+        "imgurl":"images/portfolio/runbuddy.jpg"
       },
       {
         "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
-      },
-      {
-        "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
-      },
-      {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "description":"building webpage",
+        "imgurl":"images/portfolio/project2.jpg"
       }
     ],
     "testimonials":[
       {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
+        "description":" Very helpful when building my website, I now have my ecommerce store built from scratch",
+        "name":"Client 1"
       },
       {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
+        "description":"great help managing a very out of date website",
+        "name":"Colleague "
       }
     ]
   }

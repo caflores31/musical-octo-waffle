@@ -96,13 +96,13 @@ q:before, q:after {
 }
 
 ins {
-   background-color: #ff9;
+   background-color: rgb(202, 202, 45);
    color: #000;
    text-decoration: none;
 }
 
 mark {
-   background-color: #A7F4F6;
+   background-color: #b3c0c0;
    color: #555;
 }
 
@@ -801,7 +801,3 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
-
-
-
-
